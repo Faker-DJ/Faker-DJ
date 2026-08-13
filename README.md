@@ -220,8 +220,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 </tr>
 </table>
 
-<p align="center"><sub>Ganti kartu di atas dengan proyek nyata Anda. Tambahkan kartu baru dengan pola yang sama.</sub></p>
-
 
 <br/>
 
