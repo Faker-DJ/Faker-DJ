@@ -16,7 +16,6 @@
 
 <img src="https://raw.githubusercontent.com/Faker-DJ/Faker-DJ/main/assets/cat.svg" width="420" alt="fluffy gray cat with glowing collar tag" />
 <br/>
-<sub>🐾 SYSTEM PET — status: <code>online</code></sub>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=00F5FF&center=true&vCenter=true&width=560&lines=INITIALIZING+DZ.DEV...;USER+%3A+Faker-DJ;ROLE+%3A+INFORMATICS+STUDENT+%2F+DEVELOPER;ENVIRONMENT+%3A+CODE+%2F+BUILD+%2F+LEARN;STATUS+%3A+ONLINE" alt="Typing SVG" />
 
@@ -39,7 +38,7 @@
 <div align="center">
 
 <details>
-<summary><b>▶ TAP TO REVEAL SYSTEM IDENTITY</b></summary>
+<summary><b> TAP TO REVEAL SYSTEM IDENTITY</b></summary>
 
 ```bash
 $ whoami
