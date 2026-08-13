@@ -1,0 +1,54 @@
+# ============================================================================
+# PROFILE SYSTEM CHECK
+# Memeriksa apakah file-file penting untuk profil GitHub tersedia di repo.
+# Jika ada yang hilang, workflow akan gagal dan menampilkan peringatan
+# di tab Actions — ini membantu memastikan profil selalu lengkap.
+# ============================================================================
+
+name: Profile System Check
+
+on:
+  # Berjalan setiap kali ada push ke branch main
+  push:
+    branches:
+      - main
+
+  # Bisa dijalankan manual dari tab Actions
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  system-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run system check
+        run: |
+          echo "PROFILE SYSTEM CHECK"
+          echo "====================="
+
+          status=0
+
+          check_file () {
+            if [ -e "$1" ]; then
+              echo "[OK]   $1"
+            else
+              echo "[MISS] $1"
+              status=1
+            fi
+          }
+
+          check_file "README.md"
+          check_file ".github/workflows/snake.yml"
+
+          echo "====================="
+          if [ "$status" -eq 0 ]; then
+            echo "SYSTEM STATUS: ONLINE"
+          else
+            echo "SYSTEM STATUS: WARNING - beberapa file penting tidak ditemukan"
+            exit 1
+          fi
