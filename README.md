@@ -3,7 +3,6 @@
   KONFIGURASI — GANTI SEMUA PLACEHOLDER DI BAWAH INI (gunakan Ctrl + F)
 ============================================================================
   USERNAME_GITHUB   = Faker-DJ
-  VERCEL_STATS_URL  = YOUR_VERCEL_STATS_URL   (opsional, self-hosted stats)
   LINKEDIN          = YOUR_LINKEDIN_URL
   INSTAGRAM         = YOUR_INSTAGRAM_URL
   EMAIL             = YOUR_EMAIL
@@ -164,7 +163,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 
 </div>
 
-> Catatan: jika Anda melakukan self-host `github-readme-stats` di Vercel, ganti domain di atas dengan `YOUR_VERCEL_STATS_URL` milik Anda sendiri (lihat panduan instalasi).
 
 <br/>
 
@@ -196,27 +194,27 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 <tr>
 <td width="50%" valign="top">
 
-**`PROJECT_01`**
+**`React Project`**
 
 | | |
 |--|--|
-| Nama | `PROJECT_NAME` |
-| Deskripsi | `PROJECT_DESCRIPTION` |
-| Stack | Python · JavaScript · PHP |
+| Nama | `S2U-project-fan` |
+| Deskripsi | `Website fan-made interaktif untuk Hearts2Hearts yang menampilkan profil, perjalanan, dan konten grup secara visual modern` |
+| Stack | JavaScript · CSS · HTML |
 | Status | `ACTIVE` |
 
-[VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
+[VIEW PROJECT](https://github.com/Faker-DJ/S2U-project-fan) · [LIVE DEMO](https://s2-u-project-fan.vercel.app/)
 
 </td>
 <td width="50%" valign="top">
 
-**`PROJECT_02`**
+**`E-Wallet`**
 
 | | |
 |--|--|
-| Nama | `PROJECT_NAME` |
-| Deskripsi | `PROJECT_DESCRIPTION` |
-| Stack | Flutter · Python |
+| Nama | `techpay-DZ` |
+| Deskripsi | `Website fan-made interaktif untuk Hearts2Hearts yang menampilkan profil, perjalanan, dan konten grup secara visual modern.` |
+| Stack | JavaScript · CSS · HTML |
 | Status | `IN PROGRESS` |
 
 [VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
@@ -225,83 +223,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 </tr>
 </table>
 
-<p align="center"><sub>Ganti kartu di atas dengan proyek nyata Anda. Tambahkan kartu baru dengan pola yang sama.</sub></p>
-
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,50:00A8FF,100:8B5CF6&height=3" />
-
-<div align="center">
-<img src="https://img.shields.io/badge/%3E_-currently_learning-050816?style=for-the-badge&logo=googlescholar&logoColor=00F5FF&labelColor=0B1020&color=0B1020" />
-</div>
-
-```text
-[01] Advanced Web Development     ████████░░  visual only
-[02] Python / Data Science        ██████░░░░  visual only
-[03] Artificial Intelligence      █████░░░░░  visual only
-[04] Machine Learning             █████░░░░░  visual only
-[05] Flutter Development          ███████░░░  visual only
-[06] Linux                        ████████░░  visual only
-```
-
-<sub>Indikator di atas bersifat visual/estimatif dan bukan statistik resmi.</sub>
-
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,50:00A8FF,100:8B5CF6&height=3" />
-
-<div align="center">
-<img src="https://img.shields.io/badge/%3E_-development_roadmap-050816?style=for-the-badge&logo=map&logoColor=00F5FF&labelColor=0B1020&color=0B1020" />
-</div>
-
-<div align="center">
-
-```text
-   WEB DEVELOPMENT
-          │
-          ▼
-   MOBILE DEVELOPMENT
-          │
-          ▼
-   BACKEND DEVELOPMENT
-          │
-          ▼
-   DATA SCIENCE
-          │
-          ▼
-   ARTIFICIAL INTELLIGENCE
-          │
-          ▼
-   MACHINE LEARNING
-          │
-          ▼
-   ADVANCED SOFTWARE DEVELOPMENT
-```
-
-</div>
-
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,50:00A8FF,100:8B5CF6&height=3" />
-
-<div align="center">
-<img src="https://img.shields.io/badge/%3E_-terminal-050816?style=for-the-badge&logo=gnometerminal&logoColor=00F5FF&labelColor=0B1020&color=0B1020" />
-</div>
-
-```bash
-$ git status
-On branch main
-Changes:
-  + learning
-  + building
-  + experimenting
-
-$ ./build_future.sh
-[████████████████████] 100%
-BUILD SUCCESSFUL
-```
-
-<sub>Elemen di atas hanya dekoratif dan tidak mewakili eksekusi perintah nyata.</sub>
 
 <br/>
 
@@ -315,8 +236,8 @@ BUILD SUCCESSFUL
 
 [![GitHub](https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=E6F1FF&labelColor=0B1020)](https://github.com/Faker-DJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=00A8FF&labelColor=0B1020)](YOUR_LINKEDIN_URL)
-[![Instagram](https://img.shields.io/badge/Instagram-050816?style=for-the-badge&logo=instagram&logoColor=FF00FF&labelColor=0B1020)](YOUR_INSTAGRAM_URL)
-[![Email](https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=00FF9C&labelColor=0B1020)](mailto:YOUR_EMAIL)
+[![Instagram](https://img.shields.io/badge/Instagram-050816?style=for-the-badge&logo=instagram&logoColor=FF00FF&labelColor=0B1020)](https://www.instagram.com/dzikranfauzu?igsh=cnFqMnc2dnVleGR2)
+[![Email](https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=00FF9C&labelColor=0B1020)](antwan092826@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=8B5CF6&labelColor=0B1020)](YOUR_PORTFOLIO_URL)
 
 </div>
