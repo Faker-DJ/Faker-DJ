@@ -1,0 +1,149 @@
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fluffy gray cat, sitting and relaxed, with a glowing collar tag">
+  <defs>
+    <radialGradient id="furLight" cx="35%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#C9D2E6"/>
+      <stop offset="55%" stop-color="#8B96B0"/>
+      <stop offset="100%" stop-color="#48526C"/>
+    </radialGradient>
+    <radialGradient id="furSoft" cx="40%" cy="28%" r="72%"> 
+      <stop offset="0%" stop-color="#AEB8D0"/>
+      <stop offset="100%" stop-color="#576280"/>
+    </radialGradient>
+    <radialGradient id="furDark" cx="45%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#5B6684"/>
+      <stop offset="100%" stop-color="#333C54"/>
+    </radialGradient>
+    <radialGradient id="shadowGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000512" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000512" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tagGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#00A8FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fluffBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <filter id="glowSoft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="700" height="340" fill="#050816"/>
+
+  <!-- ambient floating particles for depth -->
+  <g opacity="0.65">
+    <circle cx="85" cy="65" r="2.3" fill="#00F5FF" filter="url(#glowSoft)">
+      <animate attributeName="cy" values="65;42;65" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="615" cy="95" r="2" fill="#8B5CF6" filter="url(#glowSoft)">
+      <animate attributeName="cy" values="95;72;95" dur="5.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="645" cy="215" r="2.5" fill="#00A8FF" filter="url(#glowSoft)">
+      <animate attributeName="cy" values="215;192;215" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="55" cy="235" r="2.1" fill="#FF00FF" filter="url(#glowSoft)">
+      <animate attributeName="cy" values="235;212;235" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- grounding shadow -->
+  <ellipse cx="345" cy="305" rx="195" ry="20" fill="url(#shadowGlow)"/>
+
+  <!-- breathing wrapper (pivot around chest) -->
+  <g transform="translate(345,300)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1,1;1.015,0.985;1,1" dur="3.4s" repeatCount="indefinite"/>
+      <g transform="translate(-345,-300)">
+
+        <!-- TAIL, curled and swishing -->
+        <path d="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
+              fill="none" stroke="url(#furSoft)" stroke-width="32" stroke-linecap="round" filter="url(#fluffBlur)">
+          <animate attributeName="d"
+            values="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122;
+                     M 465,255 C 560,228 586,150 512,102 C 474,74 430,88 432,126;
+                     M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
+            dur="3.6s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
+              fill="none" stroke="url(#furDark)" stroke-width="10" stroke-linecap="round" opacity="0.35">
+          <animate attributeName="d"
+            values="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122;
+                     M 465,255 C 560,228 586,150 512,102 C 474,74 430,88 432,126;
+                     M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
+            dur="3.6s" repeatCount="indefinite"/>
+        </path>
+
+        <!-- BODY, layered fluffy masses for volume -->
+        <ellipse cx="330" cy="235" rx="152" ry="92" fill="url(#furLight)" filter="url(#fluffBlur)"/>
+        <ellipse cx="285" cy="195" rx="98" ry="68" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
+        <ellipse cx="405" cy="258" rx="82" ry="52" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.75"/>
+        <ellipse cx="330" cy="285" rx="120" ry="34" fill="url(#furDark)" filter="url(#fluffBlur)" opacity="0.4"/>
+
+        <!-- fur tufts around the silhouette -->
+        <g fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.85">
+          <ellipse cx="205" cy="238" rx="26" ry="15" transform="rotate(-12 205 238)"/>
+          <ellipse cx="228" cy="272" rx="28" ry="14" transform="rotate(8 228 272)"/>
+          <ellipse cx="445" cy="292" rx="30" ry="15" transform="rotate(-6 445 292)"/>
+          <ellipse cx="300" cy="300" rx="34" ry="13" transform="rotate(2 300 300)"/>
+          <ellipse cx="390" cy="180" rx="20" ry="12" transform="rotate(-18 390 180)" opacity="0.6"/>
+        </g>
+
+        <!-- front paw -->
+        <ellipse cx="252" cy="280" rx="30" ry="16" fill="url(#furLight)" filter="url(#fluffBlur)"/>
+        <g stroke="#3C4560" stroke-width="1.4" opacity="0.5">
+          <line x1="240" y1="272" x2="240" y2="288"/>
+          <line x1="252" y1="270" x2="252" y2="290"/>
+          <line x1="264" y1="272" x2="264" y2="288"/>
+        </g>
+
+        <!-- HEAD, gentle idle sway -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-3 235 172; 2 235 172; -3 235 172" dur="6.2s" repeatCount="indefinite"/>
+
+          <!-- ears -->
+          <path d="M 172,122 Q 163,78 198,96 Q 193,122 188,135 Z" fill="url(#furSoft)"/>
+          <path d="M 176,112 Q 172,90 190,100 Q 187,116 184,124 Z" fill="#FF00FF" opacity="0.3"/>
+          <path d="M 262,112 Q 275,66 302,90 Q 288,120 277,133 Z" fill="url(#furSoft)"/>
+          <path d="M 270,107 Q 279,84 296,96 Q 288,114 281,122 Z" fill="#FF00FF" opacity="0.3"/>
+
+          <!-- head mass -->
+          <ellipse cx="235" cy="172" rx="82" ry="66" fill="url(#furLight)" filter="url(#fluffBlur)"/>
+          <ellipse cx="178" cy="198" rx="35" ry="27" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
+          <ellipse cx="292" cy="198" rx="37" ry="29" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
+          <ellipse cx="235" cy="150" rx="60" ry="30" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.5"/>
+
+          <!-- relaxed half-closed eyes -->
+          <path d="M 202,170 Q 214,178 227,169" stroke="#1B2130" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+          <path d="M 250,168 Q 263,176 276,167" stroke="#1B2130" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+          <circle cx="214" cy="172" r="1.7" fill="#00F5FF" filter="url(#glowSoft)">
+            <animate attributeName="opacity" values="0.9;0.9;0.05;0.9" keyTimes="0;0.85;0.9;1" dur="4.8s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="262" cy="170" r="1.5" fill="#00F5FF" filter="url(#glowSoft)" opacity="0.7">
+            <animate attributeName="opacity" values="0.7;0.7;0.03;0.7" keyTimes="0;0.85;0.9;1" dur="4.8s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- nose + mouth -->
+          <path d="M 232,198 L 240,198 L 236,206 Z" fill="#FF9EDB"/>
+          <path d="M 236,206 Q 228,214 220,210" stroke="#3C4560" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M 236,206 Q 244,214 252,210" stroke="#3C4560" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+          <!-- whiskers -->
+          <g stroke="#D6DEEF" stroke-width="1.1" opacity="0.55">
+            <line x1="200" y1="200" x2="158" y2="193"/>
+            <line x1="200" y1="207" x2="158" y2="210"/>
+            <line x1="270" y1="200" x2="312" y2="192"/>
+            <line x1="270" y1="207" x2="312" y2="212"/>
+          </g>
+
+          <!-- collar + glowing tag -->
+          <path d="M 186,218 Q 235,240 288,216" stroke="#00A8FF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/>
+          <circle cx="236" cy="232" r="7" fill="url(#tagGlow)" filter="url(#glowSoft)">
+            <animate attributeName="r" values="6;8.5;6" dur="2.1s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
