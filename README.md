@@ -14,9 +14,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,45:00A8FF,100:8B5CF6&height=230&section=header&text=DZ.DEV&fontSize=64&fontColor=00F5FF&fontAlignY=36&desc=Digital%20Development%20System&descAlignY=56&descSize=18&descColor=E6F1FF&animation=fadeIn" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/Faker-DJ/Faker-DJ/main/assets/cat.svg" width="480" alt="a gray cat chasing a glowing terminal cursor" />
+<img src="https://raw.githubusercontent.com/Faker-DJ/Faker-DJ/main/assets/cat.svg" width="420" alt="fluffy gray cat with glowing collar tag" />
 <br/>
-<sub>🐾 SYSTEM PET — status: <code>playing</code></sub>
+<sub>🐾 SYSTEM PET — status: <code>online</code></sub>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2600&pause=900&color=00F5FF&center=true&vCenter=true&width=560&lines=INITIALIZING+DZ.DEV...;USER+%3A+Faker-DJ;ROLE+%3A+INFORMATICS+STUDENT+%2F+DEVELOPER;ENVIRONMENT+%3A+CODE+%2F+BUILD+%2F+LEARN;STATUS+%3A+ONLINE" alt="Typing SVG" />
 
@@ -163,6 +163,7 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 
 </div>
 
+> Catatan: kartu di atas memakai layanan publik gratis yang sudah di-host oleh maintainer-nya — **Anda tidak perlu punya akun Vercel sendiri**. Layanan gratis ini kadang kena rate-limit karena dipakai banyak profil sekaligus; jika badge sempat tampil rusak, biasanya normal kembali sendiri. Self-host di Vercel (mengganti dengan `YOUR_VERCEL_STATS_URL`) sifatnya opsional, hanya untuk yang ingin kestabilan lebih — lihat panduan instalasi.
 
 <br/>
 
@@ -203,18 +204,18 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 | Stack | JavaScript · CSS · HTML |
 | Status | `ACTIVE` |
 
-[VIEW PROJECT](https://github.com/Faker-DJ/S2U-project-fan) · [LIVE DEMO](https://s2-u-project-fan.vercel.app/)
+[VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
 
 </td>
 <td width="50%" valign="top">
 
-**`E-Wallet`**
+**`E-Wallet Project`**
 
 | | |
 |--|--|
 | Nama | `techpay-DZ` |
-| Deskripsi | `Website fan-made interaktif untuk Hearts2Hearts yang menampilkan profil, perjalanan, dan konten grup secara visual modern.` |
-| Stack | JavaScript · CSS · HTML |
+| Deskripsi | `` |
+| Stack | Flutter  |
 | Status | `IN PROGRESS` |
 
 [VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
@@ -222,6 +223,8 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 </td>
 </tr>
 </table>
+
+<p align="center"><sub>Ganti kartu di atas dengan proyek nyata Anda. Tambahkan kartu baru dengan pola yang sama.</sub></p>
 
 
 <br/>
@@ -237,7 +240,7 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 [![GitHub](https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=E6F1FF&labelColor=0B1020)](https://github.com/Faker-DJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=00A8FF&labelColor=0B1020)](YOUR_LINKEDIN_URL)
 [![Instagram](https://img.shields.io/badge/Instagram-050816?style=for-the-badge&logo=instagram&logoColor=FF00FF&labelColor=0B1020)](https://www.instagram.com/dzikranfauzu?igsh=cnFqMnc2dnVleGR2)
-[![Email](https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=00FF9C&labelColor=0B1020)](antwan092826@gmail.com)
+[![Email](https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=00FF9C&labelColor=0B1020)](mailto:antwan092826@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=8B5CF6&labelColor=0B1020)](YOUR_PORTFOLIO_URL)
 
 </div>
