@@ -154,8 +154,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Faker-DJ&show_icons=true&hide_border=true&hide_rank=true&bg_color=050816&title_color=00F5FF&icon_color=8B5CF6&text_color=E6F1FF" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faker-DJ&layout=compact&hide_border=true&bg_color=050816&title_color=00F5FF&text_color=E6F1FF" />
 
 <br/>
 
@@ -163,7 +161,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 
 </div>
 
-> Catatan: kartu di atas memakai layanan publik gratis yang sudah di-host oleh maintainer-nya — **Anda tidak perlu punya akun Vercel sendiri**. Layanan gratis ini kadang kena rate-limit karena dipakai banyak profil sekaligus; jika badge sempat tampil rusak, biasanya normal kembali sendiri. Self-host di Vercel (mengganti dengan `YOUR_VERCEL_STATS_URL`) sifatnya opsional, hanya untuk yang ingin kestabilan lebih — lihat panduan instalasi.
 
 <br/>
 
@@ -204,7 +201,7 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 | Stack | JavaScript · CSS · HTML |
 | Status | `ACTIVE` |
 
-[VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
+[VIEW PROJECT](https://github.com/Faker-DJ/S2U-project-fan) · [LIVE DEMO](https://s2-u-project-fan.vercel.app/)
 
 </td>
 <td width="50%" valign="top">
