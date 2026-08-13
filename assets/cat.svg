@@ -1,924 +1,1682 @@
 <svg
-  viewBox="0 0 1200 700"
+  viewBox="0 0 1600 900"
   xmlns="http://www.w3.org/2000/svg"
   role="img"
-  aria-label="Futuristic animated neural technology core">
+  aria-label="Premium futuristic neural core technology interface">
 
-  <defs>
+<defs>
 
-    <!-- =====================================================
-         BACKGROUND
-         ===================================================== -->
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
 
-    <linearGradient id="bg"
-      x1="0" y1="0"
-      x2="1" y2="1">
+<linearGradient id="bg"
+ x1="0" y1="0"
+ x2="1" y2="1">
 
-      <stop offset="0%" stop-color="#02040C"/>
-      <stop offset="45%" stop-color="#050B1C"/>
-      <stop offset="75%" stop-color="#07152B"/>
-      <stop offset="100%" stop-color="#02040C"/>
+ <stop offset="0%" stop-color="#01020A"/>
+ <stop offset="35%" stop-color="#03051A"/>
+ <stop offset="65%" stop-color="#08021C"/>
+ <stop offset="100%" stop-color="#01020A"/>
 
-    </linearGradient>
+</linearGradient>
 
 
-    <!-- =====================================================
-         CYAN / BLUE / PURPLE GRADIENT
-         ===================================================== -->
+<radialGradient id="spaceGlow">
 
-    <linearGradient id="neonGradient"
-      x1="0" y1="0"
-      x2="1" y2="1">
+ <stop offset="0%"
+   stop-color="#5636FF"
+   stop-opacity=".22"/>
 
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="50%" stop-color="#4F7CFF"/>
-      <stop offset="100%" stop-color="#A855F7"/>
+ <stop offset="35%"
+   stop-color="#192DFF"
+   stop-opacity=".10"/>
 
-    </linearGradient>
+ <stop offset="100%"
+   stop-color="#000000"
+   stop-opacity="0"/>
 
+</radialGradient>
 
-    <linearGradient id="coreGradient"
-      x1="0" y1="0"
-      x2="1" y2="1">
 
-      <stop offset="0%" stop-color="#00FFFF"/>
-      <stop offset="45%" stop-color="#2563EB"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
+<radialGradient id="coreGlow">
 
-    </linearGradient>
+ <stop offset="0%"
+   stop-color="#FFFFFF"/>
 
+ <stop offset="10%"
+   stop-color="#B7FFFF"/>
 
-    <!-- =====================================================
-         CORE GLOW
-         ===================================================== -->
+ <stop offset="25%"
+   stop-color="#00E5FF"/>
 
-    <radialGradient id="coreGlow">
+ <stop offset="48%"
+   stop-color="#4D3CFF"
+   stop-opacity=".8"/>
 
-      <stop offset="0%"
-        stop-color="#FFFFFF"
-        stop-opacity="1"/>
+ <stop offset="70%"
+   stop-color="#9B32FF"
+   stop-opacity=".35"/>
 
-      <stop offset="15%"
-        stop-color="#00F5FF"
-        stop-opacity=".95"/>
+ <stop offset="100%"
+   stop-color="#7C2CFF"
+   stop-opacity="0"/>
 
-      <stop offset="45%"
-        stop-color="#2563EB"
-        stop-opacity=".55"/>
+</radialGradient>
 
-      <stop offset="100%"
-        stop-color="#7C3AED"
-        stop-opacity="0"/>
 
-    </radialGradient>
+<!-- =========================================================
+     NEON GRADIENTS
+========================================================= -->
 
+<linearGradient id="bluePurple"
+ x1="0" y1="0"
+ x2="1" y2="1">
 
-    <!-- =====================================================
-         GRID GLOW
-         ===================================================== -->
+ <stop offset="0%"
+   stop-color="#00F6FF"/>
 
-    <filter
-      id="glow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%">
+ <stop offset="35%"
+   stop-color="#287CFF"/>
 
-      <feGaussianBlur
-        stdDeviation="4"
-        result="blur"/>
+ <stop offset="70%"
+   stop-color="#7448FF"/>
 
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+ <stop offset="100%"
+   stop-color="#D82CFF"/>
 
-    </filter>
+</linearGradient>
 
 
-    <filter
-      id="strongGlow"
-      x="-150%"
-      y="-150%"
-      width="400%"
-      height="400%">
+<linearGradient id="purpleBlue"
+ x1="1" y1="0"
+ x2="0" y2="1">
 
-      <feGaussianBlur
-        stdDeviation="10"
-        result="blur"/>
+ <stop offset="0%"
+   stop-color="#D92CFF"/>
 
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+ <stop offset="45%"
+   stop-color="#773FFF"/>
 
-    </filter>
+ <stop offset="100%"
+   stop-color="#00EFFF"/>
 
+</linearGradient>
 
-    <!-- =====================================================
-         SCAN GRADIENT
-         ===================================================== -->
 
-    <linearGradient
-      id="scan"
-      x1="0"
-      y1="0"
-      x2="1"
-      y2="0">
+<linearGradient id="cyanBeam"
+ x1="0" y1="0"
+ x2="1" y2="0">
 
-      <stop
-        offset="0%"
-        stop-color="#00F5FF"
-        stop-opacity="0"/>
+ <stop offset="0%"
+   stop-color="#00EFFF"
+   stop-opacity="0"/>
 
-      <stop
-        offset="50%"
-        stop-color="#00F5FF"
-        stop-opacity=".8"/>
+ <stop offset="45%"
+   stop-color="#00EFFF"
+   stop-opacity=".2"/>
 
-      <stop
-        offset="100%"
-        stop-color="#00F5FF"
-        stop-opacity="0"/>
+ <stop offset="50%"
+   stop-color="#FFFFFF"
+   stop-opacity="1"/>
 
-    </linearGradient>
+ <stop offset="55%"
+   stop-color="#7B5CFF"
+   stop-opacity=".2"/>
 
+ <stop offset="100%"
+   stop-color="#7B5CFF"
+   stop-opacity="0"/>
 
-    <!-- =====================================================
-         CLIP FOR CORE
-         ===================================================== -->
+</linearGradient>
 
-    <clipPath id="coreClip">
 
-      <circle
-        cx="600"
-        cy="350"
-        r="115"/>
+<!-- =========================================================
+     CORE GLASS
+========================================================= -->
 
-    </clipPath>
-
-  </defs>
-
-
-  <!-- =====================================================
-       BACKGROUND
-       ===================================================== -->
-
-  <rect
-    width="1200"
-    height="700"
-    fill="url(#bg)"/>
-
-
-  <!-- =====================================================
-       DIGITAL GRID
-       ===================================================== -->
-
-  <g
-    stroke="#00F5FF"
-    stroke-width=".5"
-    opacity=".13">
-
-    <!-- vertical -->
-
-    <path d="M50 0 V700"/>
-    <path d="M150 0 V700"/>
-    <path d="M250 0 V700"/>
-    <path d="M350 0 V700"/>
-    <path d="M450 0 V700"/>
-    <path d="M550 0 V700"/>
-    <path d="M650 0 V700"/>
-    <path d="M750 0 V700"/>
-    <path d="M850 0 V700"/>
-    <path d="M950 0 V700"/>
-    <path d="M1050 0 V700"/>
-    <path d="M1150 0 V700"/>
-
-    <!-- horizontal -->
-
-    <path d="M0 50 H1200"/>
-    <path d="M0 150 H1200"/>
-    <path d="M0 250 H1200"/>
-    <path d="M0 350 H1200"/>
-    <path d="M0 450 H1200"/>
-    <path d="M0 550 H1200"/>
-    <path d="M0 650 H1200"/>
-
-  </g>
-
-
-  <!-- =====================================================
-       GRID HORIZONTAL SCAN
-       ===================================================== -->
+<radialGradient id="glass">
 
-  <rect
-    x="0"
-    y="0"
-    width="1200"
-    height="3"
-    fill="url(#scan)"
-    opacity=".6">
-
-    <animate
-      attributeName="y"
-      values="-5;700"
-      dur="5s"
-      repeatCount="indefinite"/>
-
-  </rect>
-
-
-  <!-- =====================================================
-       AMBIENT PARTICLES
-       ===================================================== -->
-
-  <g
-    fill="#00F5FF"
-    filter="url(#glow)">
-
-    <circle cx="90" cy="100" r="2">
-      <animate
-        attributeName="cy"
-        values="100;80;100"
-        dur="3s"
-        repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="180" cy="530" r="2">
-      <animate
-        attributeName="cy"
-        values="530;500;530"
-        dur="4s"
-        repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="1020" cy="90" r="2">
-      <animate
-        attributeName="cy"
-        values="90;60;90"
-        dur="3.5s"
-        repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="1100" cy="520" r="2">
-      <animate
-        attributeName="cy"
-        values="520;480;520"
-        dur="2.8s"
-        repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="300" cy="160" r="1.5"/>
-    <circle cx="900" cy="580" r="1.5"/>
-    <circle cx="100" cy="350" r="1.5"/>
-    <circle cx="1100" cy="350" r="1.5"/>
+ <stop offset="0%"
+   stop-color="#CFFFFF"
+   stop-opacity=".9"/>
 
-  </g>
+ <stop offset="12%"
+   stop-color="#43DFFF"
+   stop-opacity=".65"/>
 
-
-  <!-- =====================================================
-       OUTER ROTATING RING
-       ===================================================== -->
-
-  <g
-    transform="translate(600 350)"
-    fill="none">
+ <stop offset="30%"
+   stop-color="#1D3B80"
+   stop-opacity=".6"/>
 
-    <circle
-      r="245"
-      stroke="#172554"
-      stroke-width="2"/>
+ <stop offset="55%"
+   stop-color="#180C50"
+   stop-opacity=".9"/>
 
+ <stop offset="100%"
+   stop-color="#03050D"/>
 
-    <circle
-      r="245"
-      stroke="url(#neonGradient)"
-      stroke-width="2"
-      stroke-dasharray="25 35"
-      opacity=".7"
-      filter="url(#glow)">
+</radialGradient>
 
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="0;360"
-        dur="18s"
-        repeatCount="indefinite"/>
-
-    </circle>
 
-
-    <!-- second ring -->
-
-    <circle
-      r="205"
-      stroke="#2563EB"
-      stroke-width="1"
-      stroke-dasharray="5 18"
-      opacity=".6">
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="360;0"
-        dur="12s"
-        repeatCount="indefinite"/>
-
-    </circle>
-
-
-    <!-- third ring -->
-
-    <circle
-      r="165"
-      stroke="#A855F7"
-      stroke-width="1.5"
-      stroke-dasharray="2 12"
-      opacity=".7">
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="0;360"
-        dur="9s"
-        repeatCount="indefinite"/>
-
-    </circle>
-
-  </g>
-
-
-  <!-- =====================================================
-       ROTATING TECH SEGMENTS
-       ===================================================== -->
-
-  <g
-    transform="translate(600 350)"
-    fill="none"
-    stroke="url(#neonGradient)"
-    stroke-width="5"
-    filter="url(#glow)">
+<!-- =========================================================
+     FILTERS
+========================================================= -->
 
-    <path
-      d="M0 -250 L40 -250"/>
+<filter
+ id="glow"
+ x="-100%"
+ y="-100%"
+ width="300%"
+ height="300%">
 
-    <path
-      d="M245 0 L245 40"/>
+ <feGaussianBlur
+   stdDeviation="3"
+   result="blur"/>
 
-    <path
-      d="M0 245 L-45 245"/>
+ <feMerge>
+  <feMergeNode in="blur"/>
+  <feMergeNode in="SourceGraphic"/>
+ </feMerge>
 
-    <path
-      d="M-245 0 L-245 -40"/>
+</filter>
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="0;360"
-      dur="10s"
-      repeatCount="indefinite"/>
 
-  </g>
+<filter
+ id="bigGlow"
+ x="-150%"
+ y="-150%"
+ width="400%"
+ height="400%">
 
+ <feGaussianBlur
+   stdDeviation="10"
+   result="blur"/>
 
-  <!-- =====================================================
-       NETWORK CONNECTIONS
-       ===================================================== -->
+ <feMerge>
+  <feMergeNode in="blur"/>
+  <feMergeNode in="SourceGraphic"/>
+ </feMerge>
 
-  <g
-    fill="none"
-    stroke="#00F5FF"
-    stroke-width="1.5"
-    opacity=".5"
-    filter="url(#glow)">
+</filter>
 
-    <!-- left -->
 
-    <path
-      d="M600 350
-         L450 250
-         L280 250
-         L170 180"/>
+<filter
+ id="hugeGlow"
+ x="-200%"
+ y="-200%"
+ width="500%"
+ height="500%">
 
-    <path
-      d="M600 350
-         L430 350
-         L260 400
-         L120 400"/>
+ <feGaussianBlur
+   stdDeviation="25"
+   result="blur"/>
 
-    <path
-      d="M600 350
-         L450 450
-         L300 500
-         L190 560"/>
+ <feMerge>
+  <feMergeNode in="blur"/>
+  <feMergeNode in="SourceGraphic"/>
+ </feMerge>
 
-    <!-- right -->
+</filter>
 
-    <path
-      d="M600 350
-         L760 240
-         L930 220
-         L1060 150"/>
 
-    <path
-      d="M600 350
-         L790 350
-         L950 390
-         L1090 390"/>
+<filter id="blur">
 
-    <path
-      d="M600 350
-         L760 460
-         L920 500
-         L1050 570"/>
+ <feGaussianBlur stdDeviation="30"/>
 
-    <!-- top -->
+</filter>
 
-    <path
-      d="M600 350
-         L600 210
-         L600 100"/>
 
-    <!-- bottom -->
+<!-- =========================================================
+     GRID
+========================================================= -->
 
-    <path
-      d="M600 350
-         L600 490
-         L600 600"/>
+<pattern
+ id="grid"
+ width="60"
+ height="60"
+ patternUnits="userSpaceOnUse">
 
-  </g>
+ <path
+   d="M60 0H0V60"
+   fill="none"
+   stroke="#3150FF"
+   stroke-width=".5"
+   opacity=".18"/>
 
+</pattern>
 
-  <!-- =====================================================
-       DATA PACKETS MOVING THROUGH NETWORK
-       ===================================================== -->
 
-  <g
-    fill="#FFFFFF"
-    filter="url(#strongGlow)">
+<!-- =========================================================
+     CORE CLIP
+========================================================= -->
 
-    <circle r="4">
+<clipPath id="coreClip">
 
-      <animateMotion
-        dur="3s"
-        repeatCount="indefinite"
-        path="M600 350 L450 250 L280 250 L170 180"/>
+ <circle
+   cx="800"
+   cy="430"
+   r="155"/>
 
-    </circle>
+</clipPath>
 
 
-    <circle r="4">
+<!-- =========================================================
+     MASK FOR VIGNETTE
+========================================================= -->
 
-      <animateMotion
-        dur="2.7s"
-        repeatCount="indefinite"
-        path="M600 350 L430 350 L260 400 L120 400"/>
+<radialGradient id="vignette">
 
-    </circle>
+ <stop offset="55%"
+   stop-color="#000"
+   stop-opacity="0"/>
 
+ <stop offset="100%"
+   stop-color="#000"
+   stop-opacity=".8"/>
 
-    <circle r="4">
+</radialGradient>
 
-      <animateMotion
-        dur="3.5s"
-        repeatCount="indefinite"
-        path="M600 350 L760 240 L930 220 L1060 150"/>
+</defs>
 
-    </circle>
 
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
 
-    <circle r="4">
+<rect
+ width="1600"
+ height="900"
+ fill="url(#bg)"/>
 
-      <animateMotion
-        dur="3s"
-        repeatCount="indefinite"
-        path="M600 350 L790 350 L950 390 L1090 390"/>
 
-    </circle>
+<!-- atmospheric glow -->
 
+<ellipse
+ cx="800"
+ cy="410"
+ rx="600"
+ ry="430"
+ fill="url(#spaceGlow)"
+ filter="url(#blur)">
 
-    <circle r="4">
+ <animate
+  attributeName="opacity"
+  values=".6;1;.6"
+  dur="10s"
+  repeatCount="indefinite"/>
 
-      <animateMotion
-        dur="2.5s"
-        repeatCount="indefinite"
-        path="M600 350 L600 210 L600 100"/>
+</ellipse>
 
-    </circle>
 
+<!-- =========================================================
+     STAR FIELD
+========================================================= -->
 
-    <circle r="4">
+<g fill="#FFFFFF">
 
-      <animateMotion
-        dur="3s"
-        repeatCount="indefinite"
-        path="M600 350 L600 490 L600 600"/>
+ <circle cx="100" cy="110" r="1"/>
+ <circle cx="180" cy="240" r="1.5"/>
+ <circle cx="270" cy="120" r="1"/>
+ <circle cx="390" cy="190" r="1"/>
+ <circle cx="480" cy="90" r="1.5"/>
+ <circle cx="590" cy="180" r="1"/>
+ <circle cx="1030" cy="100" r="1"/>
+ <circle cx="1140" cy="170" r="1.5"/>
+ <circle cx="1270" cy="110" r="1"/>
+ <circle cx="1430" cy="220" r="1.5"/>
+ <circle cx="1510" cy="100" r="1"/>
 
-    </circle>
+ <circle cx="100" cy="690" r="1"/>
+ <circle cx="240" cy="780" r="1.5"/>
+ <circle cx="380" cy="650" r="1"/>
+ <circle cx="500" cy="740" r="1"/>
+ <circle cx="1080" cy="760" r="1"/>
+ <circle cx="1230" cy="670" r="1.5"/>
+ <circle cx="1390" cy="770" r="1"/>
+ <circle cx="1510" cy="650" r="1"/>
 
-  </g>
+</g>
 
 
-  <!-- =====================================================
-       NETWORK NODES
-       ===================================================== -->
+<!-- twinkling stars -->
 
-  <g
-    fill="#050B1C"
-    stroke="#00F5FF"
-    stroke-width="2"
-    filter="url(#glow)">
+<g
+ fill="#8B7CFF"
+ filter="url(#glow)">
 
-    <circle cx="170" cy="180" r="9"/>
-    <circle cx="120" cy="400" r="9"/>
-    <circle cx="190" cy="560" r="9"/>
+ <circle cx="160" cy="140" r="2">
+  <animate
+   attributeName="opacity"
+   values=".2;1;.2"
+   dur="2s"
+   repeatCount="indefinite"/>
+ </circle>
 
-    <circle cx="1060" cy="150" r="9"/>
-    <circle cx="1090" cy="390" r="9"/>
-    <circle cx="1050" cy="570" r="9"/>
+ <circle cx="1320" cy="180" r="2">
+  <animate
+   attributeName="opacity"
+   values=".2;1;.2"
+   dur="3s"
+   repeatCount="indefinite"/>
+ </circle>
 
-    <circle cx="600" cy="100" r="9"/>
-    <circle cx="600" cy="600" r="9"/>
+ <circle cx="300" cy="700" r="2">
+  <animate
+   attributeName="opacity"
+   values="1;.2;1"
+   dur="2.5s"
+   repeatCount="indefinite"/>
+ </circle>
 
-  </g>
+ <circle cx="1370" cy="650" r="2">
+  <animate
+   attributeName="opacity"
+   values=".2;1;.2"
+   dur="1.8s"
+   repeatCount="indefinite"/>
+ </circle>
 
+</g>
 
-  <!-- =====================================================
-       NODE PULSES
-       ===================================================== -->
 
-  <g
-    fill="none"
-    stroke="#00F5FF"
-    stroke-width="2">
+<!-- =========================================================
+     DIGITAL GRID
+========================================================= -->
 
-    <circle cx="170" cy="180" r="15">
-      <animate
-        attributeName="r"
-        values="10;28;10"
-        dur="2s"
-        repeatCount="indefinite"/>
-      <animate
-        attributeName="opacity"
-        values="1;0;1"
-        dur="2s"
-        repeatCount="indefinite"/>
-    </circle>
+<rect
+ x="0"
+ y="0"
+ width="1600"
+ height="900"
+ fill="url(#grid)"
+ opacity=".35"/>
 
-    <circle cx="1060" cy="150" r="15">
-      <animate
-        attributeName="r"
-        values="10;30;10"
-        dur="2.5s"
-        repeatCount="indefinite"/>
-      <animate
-        attributeName="opacity"
-        values="1;0;1"
-        dur="2.5s"
-        repeatCount="indefinite"/>
-    </circle>
 
-  </g>
+<!-- =========================================================
+     MOVING SCAN LINE
+========================================================= -->
 
+<rect
+ x="0"
+ y="-10"
+ width="1600"
+ height="5"
+ fill="url(#cyanBeam)"
+ filter="url(#glow)">
 
-  <!-- =====================================================
-       CORE AURA
-       ===================================================== -->
+ <animate
+  attributeName="y"
+  values="-10;900"
+  dur="7s"
+  repeatCount="indefinite"/>
 
-  <circle
-    cx="600"
-    cy="350"
-    r="170"
-    fill="url(#coreGlow)"
-    filter="url(#strongGlow)">
+</rect>
 
-    <animate
-      attributeName="r"
-      values="150;180;150"
-      dur="3s"
-      repeatCount="indefinite"/>
 
-    <animate
-      attributeName="opacity"
-      values=".45;.8;.45"
-      dur="3s"
-      repeatCount="indefinite"/>
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-  </circle>
+<g
+ font-family="Arial, Helvetica, sans-serif">
 
+ <text
+  x="70"
+  y="70"
+  fill="#FFFFFF"
+  font-size="32"
+  font-weight="300"
+  letter-spacing="7">
 
-  <!-- =====================================================
-       CORE
-       ===================================================== -->
+  NEURAL
+  <tspan
+   fill="#A85CFF">
+   CORE
+  </tspan>
 
-  <circle
-    cx="600"
-    cy="350"
-    r="115"
-    fill="#030712"
-    stroke="url(#neonGradient)"
-    stroke-width="4"
-    filter="url(#glow)"/>
+ </text>
 
 
-  <!-- =====================================================
-       CORE INNER ROTATION
-       ===================================================== -->
+ <text
+  x="73"
+  y="98"
+  fill="#6573A8"
+  font-size="10"
+  letter-spacing="5">
 
-  <g
-    transform="translate(600 350)"
-    fill="none">
+  ARTIFICIAL INTELLIGENCE // QUANTUM SYSTEM
 
-    <circle
-      r="90"
-      stroke="#00F5FF"
-      stroke-width="1"
-      stroke-dasharray="3 8"
-      opacity=".8">
+ </text>
 
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="0;360"
-        dur="5s"
-        repeatCount="indefinite"/>
 
-    </circle>
+ <line
+  x1="70"
+  y1="116"
+  x2="480"
+  y2="116"
+  stroke="url(#bluePurple)"
+  stroke-width="2"
+  filter="url(#glow)"/>
 
+</g>
 
-    <circle
-      r="65"
-      stroke="#8B5CF6"
-      stroke-width="2"
-      stroke-dasharray="15 20">
 
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="360;0"
-        dur="4s"
-        repeatCount="indefinite"/>
+<!-- =========================================================
+     CENTRAL AMBIENT CORE
+========================================================= -->
 
-    </circle>
+<circle
+ cx="800"
+ cy="430"
+ r="270"
+ fill="url(#coreGlow)"
+ opacity=".18"
+ filter="url(#hugeGlow)">
 
-  </g>
+ <animate
+  attributeName="r"
+  values="240;290;240"
+  dur="7s"
+  repeatCount="indefinite"/>
 
+</circle>
 
-  <!-- =====================================================
-       AI CORE HEXAGON
-       ===================================================== -->
 
-  <polygon
-    points="
-    600,295
-    648,322
-    648,378
-    600,405
-    552,378
-    552,322"
-    fill="#06152A"
-    stroke="#00F5FF"
-    stroke-width="3"
-    filter="url(#glow)">
+<!-- =========================================================
+     ORBITAL RINGS
+========================================================= -->
 
+<g
+ transform="translate(800 430)"
+ fill="none">
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="0 600 350;360 600 350"
-      dur="8s"
-      repeatCount="indefinite"/>
+ <!-- outer -->
 
-  </polygon>
+ <ellipse
+  rx="390"
+  ry="125"
+  stroke="#1D347B"
+  stroke-width="2"
+  opacity=".6"/>
 
 
-  <!-- =====================================================
-       CORE SYMBOL
-       ===================================================== -->
+ <ellipse
+  rx="390"
+  ry="125"
+  stroke="url(#bluePurple)"
+  stroke-width="3"
+  stroke-dasharray="80 25 8 20"
+  filter="url(#glow)">
 
-  <g
-    fill="none"
-    stroke="#FFFFFF"
-    stroke-width="4"
-    stroke-linecap="round"
-    filter="url(#strongGlow)">
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="0;360"
+   dur="18s"
+   repeatCount="indefinite"/>
 
-    <path d="M580 350 L600 330 L620 350"/>
-    <path d="M580 350 L600 370 L620 350"/>
+ </ellipse>
 
-  </g>
 
+ <!-- middle -->
 
-  <!-- =====================================================
-       CORE PULSE
-       ===================================================== -->
+ <ellipse
+  rx="310"
+  ry="105"
+  stroke="url(#purpleBlue)"
+  stroke-width="3"
+  stroke-dasharray="30 12 100 18"
+  opacity=".8"
+  filter="url(#glow)">
 
-  <circle
-    cx="600"
-    cy="350"
-    r="20"
-    fill="#00F5FF"
-    filter="url(#strongGlow)">
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="360;0"
+   dur="12s"
+   repeatCount="indefinite"/>
 
-    <animate
-      attributeName="r"
-      values="15;35;15"
-      dur="1.5s"
-      repeatCount="indefinite"/>
+ </ellipse>
 
-    <animate
-      attributeName="opacity"
-      values=".9;.2;.9"
-      dur="1.5s"
-      repeatCount="indefinite"/>
 
-  </circle>
+ <!-- inner -->
 
+ <ellipse
+  rx="225"
+  ry="82"
+  stroke="#7C8CFF"
+  stroke-width="1"
+  stroke-dasharray="3 12"
+  opacity=".65">
 
-  <!-- =====================================================
-       DIGITAL RAIN
-       ===================================================== -->
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="0;360"
+   dur="8s"
+   repeatCount="indefinite"/>
 
-  <g
-    fill="#00F5FF"
-    font-family="monospace"
-    font-size="11"
-    opacity=".35">
+ </ellipse>
 
-    <text x="40" y="220">010101</text>
-    <text x="40" y="240">101001</text>
-    <text x="40" y="260">110010</text>
+</g>
 
-    <text x="1030" y="450">101100</text>
-    <text x="1030" y="470">010011</text>
-    <text x="1030" y="490">111010</text>
 
-    <text x="760" y="80">AI_CORE</text>
-    <text x="760" y="100">SYSTEM_ON</text>
+<!-- =========================================================
+     ORBITING ENERGY OBJECTS
+========================================================= -->
 
-  </g>
+<g
+ transform="translate(800 430)"
+ filter="url(#bigGlow)">
 
+ <circle
+  cx="390"
+  cy="0"
+  r="7"
+  fill="#00F6FF"/>
 
-  <!-- =====================================================
-       STATUS PANELS
-       ===================================================== -->
+ <circle
+  cx="-390"
+  cy="0"
+  r="6"
+  fill="#B53DFF"/>
 
-  <g
-    font-family="monospace">
+ <circle
+  cx="0"
+  cy="-125"
+  r="5"
+  fill="#FFFFFF"/>
 
-    <!-- top title -->
+ <animateTransform
+  attributeName="transform"
+  type="rotate"
+  values="0;360"
+  dur="18s"
+  repeatCount="indefinite"/>
 
-    <text
-      x="55"
-      y="65"
-      fill="#FFFFFF"
-      font-size="26"
-      font-weight="bold"
-      letter-spacing="5">
+</g>
 
-      NEURAL
-      <tspan fill="#00F5FF">CORE</tspan>
 
-    </text>
+<!-- =========================================================
+     VERTICAL ENERGY COLUMN
+========================================================= -->
 
+<g
+ opacity=".8"
+ filter="url(#glow)">
 
-    <text
-      x="58"
-      y="90"
-      fill="#64748B"
-      font-size="11"
-      letter-spacing="3">
+ <line
+  x1="800"
+  y1="80"
+  x2="800"
+  y2="275"
+  stroke="url(#bluePurple)"
+  stroke-width="2"/>
 
-      ARTIFICIAL INTELLIGENCE SYSTEM
+ <line
+  x1="800"
+  y1="585"
+  x2="800"
+  y2="720"
+  stroke="url(#purpleBlue)"
+  stroke-width="2"/>
 
-    </text>
+ <circle
+  cx="800"
+  cy="110"
+  r="5"
+  fill="#00F6FF">
 
+  <animate
+   attributeName="cy"
+   values="100;260;100"
+   dur="4s"
+   repeatCount="indefinite"/>
 
-    <!-- left status -->
+ </circle>
 
-    <rect
-      x="55"
-      y="555"
-      width="220"
-      height="70"
-      rx="8"
-      fill="#030712"
-      stroke="#164E63"
-      opacity=".9"/>
+</g>
 
 
-    <circle
-      cx="80"
-      cy="580"
-      r="5"
-      fill="#00FFB3"
-      filter="url(#glow)">
+<!-- =========================================================
+     CORE SPHERE
+========================================================= -->
 
-      <animate
-        attributeName="opacity"
-        values="1;.3;1"
-        dur="1s"
-        repeatCount="indefinite"/>
+<circle
+ cx="800"
+ cy="430"
+ r="160"
+ fill="#02030A"
+ stroke="#526EFF"
+ stroke-width="2"
+ filter="url(#bigGlow)"/>
 
-    </circle>
 
+<circle
+ cx="800"
+ cy="430"
+ r="150"
+ fill="url(#glass)"
+ stroke="url(#bluePurple)"
+ stroke-width="3"
+ filter="url(#glow)"/>
 
-    <text
-      x="95"
-      y="584"
-      fill="#FFFFFF"
-      font-size="12">
 
-      SYSTEM ONLINE
+<!-- =========================================================
+     CORE WIREFRAME
+========================================================= -->
 
-    </text>
+<g
+ transform="translate(800 430)"
+ fill="none"
+ stroke="#91EFFF"
+ stroke-width="1"
+ opacity=".7">
 
+ <ellipse
+  rx="145"
+  ry="50">
 
-    <text
-      x="75"
-      y="608"
-      fill="#64748B"
-      font-size="10">
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="0;360"
+   dur="8s"
+   repeatCount="indefinite"/>
 
-      CORE STATUS : 99.98%
+ </ellipse>
 
-    </text>
 
+ <ellipse
+  rx="145"
+  ry="80">
 
-    <!-- right status -->
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="360;0"
+   dur="11s"
+   repeatCount="indefinite"/>
 
-    <rect
-      x="925"
-      y="555"
-      width="220"
-      height="70"
-      rx="8"
-      fill="#030712"
-      stroke="#312E81"
-      opacity=".9"/>
+ </ellipse>
 
 
-    <text
-      x="945"
-      y="580"
-      fill="#A78BFA"
-      font-size="11">
+ <ellipse
+  rx="80"
+  ry="145">
 
-      PROCESSING
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="0;360"
+   dur="9s"
+   repeatCount="indefinite"/>
 
-    </text>
+ </ellipse>
 
 
-    <text
-      x="945"
-      y="605"
-      fill="#FFFFFF"
-      font-size="18">
+ <ellipse
+  rx="50"
+  ry="145">
 
-      847.21 TB/s
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="360;0"
+   dur="7s"
+   repeatCount="indefinite"/>
 
-    </text>
+ </ellipse>
 
-  </g>
+</g>
 
 
-  <!-- =====================================================
-       CORNER DECORATIONS
-       ===================================================== -->
+<!-- =========================================================
+     NEURAL NETWORK
+========================================================= -->
 
-  <g
-    stroke="#00F5FF"
-    fill="none"
-    opacity=".6">
+<g
+ stroke="#A05CFF"
+ stroke-width="1.2"
+ fill="none"
+ opacity=".8"
+ filter="url(#glow)">
 
-    <path d="M25 25 H100"/>
-    <path d="M25 25 V100"/>
+ <path d="M720 360 L760 320 L805 345 L850 315 L885 360"/>
+ <path d="M715 430 L750 390 L800 410 L850 385 L890 430"/>
+ <path d="M725 485 L765 450 L810 475 L855 450 L875 485"/>
 
-    <path d="M1100 25 H1175"/>
-    <path d="M1175 25 V100"/>
+ <path d="M760 320 L750 390 L765 450"/>
+ <path d="M805 345 L800 410 L810 475"/>
+ <path d="M850 315 L850 385 L855 450"/>
 
-    <path d="M25 675 H100"/>
-    <path d="M25 600 V675"/>
+</g>
 
-    <path d="M1100 675 H1175"/>
-    <path d="M1175 600 V675"/>
 
-  </g>
+<!-- neural nodes -->
 
+<g
+ fill="#D7F9FF"
+ filter="url(#bigGlow)">
 
-  <!-- =====================================================
-       FINAL VIGNETTE
-       ===================================================== -->
+ <circle cx="720" cy="360" r="4"/>
+ <circle cx="760" cy="320" r="4"/>
+ <circle cx="805" cy="345" r="5"/>
+ <circle cx="850" cy="315" r="4"/>
+ <circle cx="885" cy="360" r="4"/>
 
-  <rect
-    x="5"
-    y="5"
-    width="1190"
-    height="690"
-    rx="10"
-    fill="none"
-    stroke="#0EA5E9"
-    stroke-opacity=".25"
-    stroke-width="2"/>
+ <circle cx="715" cy="430" r="4"/>
+ <circle cx="750" cy="390" r="4"/>
+ <circle cx="800" cy="410" r="6"/>
+ <circle cx="850" cy="385" r="4"/>
+ <circle cx="890" cy="430" r="4"/>
+
+ <circle cx="725" cy="485" r="4"/>
+ <circle cx="765" cy="450" r="4"/>
+ <circle cx="810" cy="475" r="5"/>
+ <circle cx="855" cy="450" r="4"/>
+ <circle cx="875" cy="485" r="4"/>
+
+</g>
+
+
+<!-- =========================================================
+     CENTRAL ENERGY
+========================================================= -->
+
+<circle
+ cx="800"
+ cy="430"
+ r="75"
+ fill="url(#coreGlow)"
+ filter="url(#bigGlow)">
+
+ <animate
+  attributeName="r"
+  values="65;85;65"
+  dur="3s"
+  repeatCount="indefinite"/>
+
+</circle>
+
+
+<circle
+ cx="800"
+ cy="430"
+ r="35"
+ fill="#FFFFFF"
+ opacity=".9"
+ filter="url(#hugeGlow)">
+
+ <animate
+  attributeName="r"
+  values="25;45;25"
+  dur="2s"
+  repeatCount="indefinite"/>
+
+</circle>
+
+
+<!-- =========================================================
+     AI HEX CORE
+========================================================= -->
+
+<polygon
+ points="
+ 800,390
+ 835,410
+ 835,450
+ 800,470
+ 765,450
+ 765,410"
+ fill="#060A1D"
+ stroke="url(#bluePurple)"
+ stroke-width="3"
+ filter="url(#glow)">
+
+
+ <animateTransform
+  attributeName="transform"
+  type="rotate"
+  values="0 800 430;360 800 430"
+  dur="9s"
+  repeatCount="indefinite"/>
+
+</polygon>
+
+
+<path
+ d="M780 430 L800 410 L820 430 L800 450 Z"
+ fill="none"
+ stroke="#FFFFFF"
+ stroke-width="2"
+ filter="url(#bigGlow)"/>
+
+
+<!-- =========================================================
+     CORE PULSE RINGS
+========================================================= -->
+
+<circle
+ cx="800"
+ cy="430"
+ r="60"
+ fill="none"
+ stroke="#00EFFF"
+ stroke-width="2"
+ opacity=".8">
+
+ <animate
+  attributeName="r"
+  values="50;130;50"
+  dur="4s"
+  repeatCount="indefinite"/>
+
+ <animate
+  attributeName="opacity"
+  values=".8;0;.8"
+  dur="4s"
+  repeatCount="indefinite"/>
+
+</circle>
+
+
+<circle
+ cx="800"
+ cy="430"
+ r="70"
+ fill="none"
+ stroke="#A43CFF"
+ stroke-width="1">
+
+ <animate
+  attributeName="r"
+  values="70;160;70"
+  dur="5s"
+  repeatCount="indefinite"/>
+
+ <animate
+  attributeName="opacity"
+  values=".6;0;.6"
+  dur="5s"
+  repeatCount="indefinite"/>
+
+</circle>
+
+
+<!-- =========================================================
+     LEFT SYSTEM PANEL
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M60 205
+  H370
+  L395 230
+  V405
+  H60
+  Z"
+ fill="#05091A"
+ fill-opacity=".85"
+ stroke="#3D6FFF"
+ stroke-width="1.5"/>
+
+
+ <path
+  d="M60 205 H370 L395 230"
+ fill="none"
+ stroke="#00EFFF"
+ stroke-width="2"
+ filter="url(#glow)"/>
+
+
+ <text
+  x="85"
+  y="245"
+  fill="#00EFFF"
+  font-family="monospace"
+  font-size="15"
+  letter-spacing="2">
+
+  SYSTEM STATUS
+
+ </text>
+
+
+ <circle
+  cx="92"
+  cy="275"
+  r="6"
+  fill="#00FFB7"
+  filter="url(#glow)">
+
+  <animate
+   attributeName="opacity"
+   values="1;.3;1"
+   dur="1.2s"
+   repeatCount="indefinite"/>
+
+ </circle>
+
+
+ <text
+  x="110"
+  y="281"
+  fill="#FFFFFF"
+  font-family="monospace"
+  font-size="13">
+
+  CORE : ONLINE
+
+ </text>
+
+
+ <text
+  x="85"
+  y="315"
+  fill="#7888C8"
+  font-family="monospace"
+  font-size="12">
+
+  AI ENGINE
+
+ </text>
+
+ <text
+  x="280"
+  y="315"
+  fill="#B36CFF"
+  font-family="monospace"
+  font-size="12">
+
+  ACTIVE
+
+ </text>
+
+
+ <text
+  x="85"
+  y="345"
+  fill="#7888C8"
+  font-family="monospace"
+  font-size="12">
+
+  NETWORK
+
+ </text>
+
+ <text
+  x="280"
+  y="345"
+  fill="#00EFFF"
+  font-family="monospace"
+  font-size="12">
+
+  SECURE
+
+ </text>
+
+
+ <text
+  x="85"
+  y="375"
+  fill="#7888C8"
+  font-family="monospace"
+  font-size="12">
+
+  PROCESSING
+
+ </text>
+
+ <text
+  x="280"
+  y="375"
+  fill="#FFFFFF"
+  font-family="monospace"
+  font-size="12">
+
+  99.98%
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     REALTIME GRAPH
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M60 470
+  H390
+  V680
+  H60
+  Z"
+ fill="#040719"
+ stroke="#493FFF"
+ stroke-width="1.5"/>
+
+
+ <text
+  x="85"
+  y="505"
+  fill="#A36BFF"
+  font-family="monospace"
+  font-size="14"
+  letter-spacing="2">
+
+  REAL-TIME DATA
+
+ </text>
+
+
+ <!-- graph grid -->
+
+ <g
+  stroke="#2B3B78"
+  stroke-width=".5"
+  opacity=".5">
+
+  <path d="M85 545 H365"/>
+  <path d="M85 580 H365"/>
+  <path d="M85 615 H365"/>
+  <path d="M120 530 V635"/>
+  <path d="M170 530 V635"/>
+  <path d="M220 530 V635"/>
+  <path d="M270 530 V635"/>
+  <path d="M320 530 V635"/>
+
+ </g>
+
+
+ <!-- animated graph -->
+
+ <path
+  d="
+  M85 615
+  L120 590
+  L150 605
+  L180 560
+  L210 585
+  L240 545
+  L270 575
+  L300 530
+  L330 555
+  L365 520"
+ fill="none"
+ stroke="url(#bluePurple)"
+ stroke-width="3"
+ filter="url(#glow)">
+
+  <animate
+   attributeName="opacity"
+   values=".5;1;.5"
+   dur="2s"
+   repeatCount="indefinite"/>
+
+ </path>
+
+
+ <circle
+  cx="365"
+  cy="520"
+  r="5"
+  fill="#00EFFF"
+  filter="url(#glow)">
+
+  <animate
+   attributeName="r"
+   values="4;9;4"
+   dur="1.2s"
+   repeatCount="indefinite"/>
+
+ </circle>
+
+
+ <text
+  x="90"
+  y="655"
+  fill="#6876AA"
+  font-family="monospace"
+  font-size="10">
+
+  CPU 98%
+
+ </text>
+
+
+ <text
+  x="180"
+  y="655"
+  fill="#6876AA"
+  font-family="monospace"
+  font-size="10">
+
+  MEM 87%
+
+ </text>
+
+
+ <text
+  x="280"
+  y="655"
+  fill="#6876AA"
+  font-family="monospace"
+  font-size="10">
+
+  NET 92%
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     RIGHT AI PANEL
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M1210 205
+  H1540
+  V405
+  H1200
+  V230
+  Z"
+ fill="#050719"
+ stroke="#8A4DFF"
+ stroke-width="1.5"/>
+
+
+ <text
+  x="1230"
+  y="245"
+  fill="#B76CFF"
+  font-family="monospace"
+  font-size="15"
+  letter-spacing="2">
+
+  AI PROCESSING
+
+ </text>
+
+
+ <!-- brain -->
+
+ <g
+  transform="translate(1270 315)"
+  fill="none"
+  stroke="#7C68FF"
+  stroke-width="1"
+  filter="url(#glow)">
+
+  <circle r="50" opacity=".25"/>
+
+  <path d="M-30 -20 L0 -40 L30 -20 L25 15 L0 35 L-25 15 Z"/>
+
+  <path d="M-30 -20 L0 0 L30 -20"/>
+  <path d="M-25 15 L0 0 L25 15"/>
+  <path d="M0 -40 V35"/>
+
+ </g>
+
+
+ <g
+  font-family="monospace"
+  font-size="11">
+
+  <text x="1350" y="290" fill="#8C9BDE">
+   DEEP LEARNING
+  </text>
+
+  <text x="1350" y="315" fill="#8C9BDE">
+   NEURAL NETWORK
+  </text>
+
+  <text x="1350" y="340" fill="#8C9BDE">
+   COMPUTER VISION
+  </text>
+
+  <text x="1350" y="365" fill="#8C9BDE">
+   PREDICTIVE AI
+  </text>
+
+ </g>
+
+</g>
+
+
+<!-- =========================================================
+     GLOBAL NETWORK
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M1210 450
+  H1540
+  V650
+  H1200
+  V475
+  Z"
+ fill="#04061A"
+ stroke="#3F72FF"
+ stroke-width="1.5"/>
+
+
+ <text
+  x="1230"
+  y="490"
+  fill="#00EFFF"
+  font-family="monospace"
+  font-size="14"
+  letter-spacing="2">
+
+  GLOBAL NETWORK
+
+ </text>
+
+
+ <!-- network map -->
+
+ <g
+  fill="none"
+  stroke="#5B6DFF"
+  stroke-width="1"
+  opacity=".7">
+
+  <path d="M1235 540 Q1370 490 1510 545"/>
+  <path d="M1235 580 Q1370 530 1510 585"/>
+  <path d="M1260 520 Q1350 590 1450 520"/>
+  <path d="M1310 505 Q1400 570 1490 530"/>
+
+ </g>
+
+
+ <g
+  fill="#00EFFF"
+  filter="url(#glow)">
+
+  <circle cx="1260" cy="540" r="4"/>
+  <circle cx="1320" cy="525" r="4"/>
+  <circle cx="1380" cy="555" r="4"/>
+  <circle cx="1450" cy="530" r="4"/>
+  <circle cx="1510" cy="555" r="4"/>
+
+ </g>
+
+
+ <text
+  x="1230"
+  y="620"
+  fill="#8997D2"
+  font-family="monospace"
+  font-size="11">
+
+  12,458 NODES ONLINE
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     FLOATING HOLOGRAM CUBES
+========================================================= -->
+
+<g
+ fill="none"
+ stroke="url(#bluePurple)"
+ stroke-width="1.5"
+ filter="url(#glow)">
+
+ <g>
+
+  <path
+   d="M450 245 L475 230 L500 245 L500 275 L475 290 L450 275 Z"/>
+
+  <path d="M450 245 L475 260 L500 245"/>
+  <path d="M475 260 V290"/>
+
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="0 475 260;360 475 260"
+   dur="7s"
+   repeatCount="indefinite"/>
+
+ </g>
+
+
+ <g>
+
+  <path
+   d="M1070 590 L1095 575 L1120 590 L1120 620 L1095 635 L1070 620 Z"/>
+
+  <path d="M1070 590 L1095 605 L1120 590"/>
+  <path d="M1095 605 V635"/>
+
+  <animateTransform
+   attributeName="transform"
+   type="rotate"
+   values="360 1095 605;0 1095 605"
+   dur="8s"
+   repeatCount="indefinite"/>
+
+ </g>
+
+</g>
+
+
+<!-- =========================================================
+     DATA STREAMS
+========================================================= -->
+
+<g
+ font-family="monospace"
+ font-size="10"
+ fill="#5D75C7"
+ opacity=".65">
+
+ <text x="450" y="160">
+  01001011 11001001 101001
+ </text>
+
+ <text x="1030" y="130">
+  110101 001101 010011
+ </text>
+
+ <text x="440" y="700">
+  NEURAL_STREAM_07
+ </text>
+
+ <text x="1040" y="720">
+  QUANTUM_CHANNEL_09
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     TERMINAL
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M60 720
+  H520
+  V820
+  H60
+  Z"
+ fill="#03051A"
+ stroke="#3D4C91"
+ stroke-width="1"/>
+
+
+ <text
+  x="85"
+  y="750"
+  fill="#6578C5"
+  font-family="monospace"
+  font-size="11">
+
+  &gt; INITIALIZING NEURAL CORE...
+
+ </text>
+
+
+ <text
+  x="85"
+  y="772"
+  fill="#6677B8"
+  font-family="monospace"
+  font-size="11">
+
+  &gt; LOADING AI MODULES...
+
+ </text>
+
+
+ <text
+  x="85"
+  y="794"
+  fill="#7186D7"
+  font-family="monospace"
+  font-size="11">
+
+  &gt; ESTABLISHING SECURE CONNECTION...
+
+ </text>
+
+
+ <text
+  x="85"
+  y="816"
+  fill="#00EFFF"
+  font-family="monospace"
+  font-size="11">
+
+  &gt; SYSTEM READY_
+
+  <animate
+   attributeName="opacity"
+   values="1;0;1"
+   dur="1s"
+   repeatCount="indefinite"/>
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     NEURAL INTERFACE
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M1080 720
+  H1540
+  V820
+  H1080
+  Z"
+ fill="#03051A"
+ stroke="#6E4EFF"
+ stroke-width="1"/>
+
+
+ <text
+  x="1110"
+  y="752"
+  fill="#B468FF"
+  font-family="monospace"
+  font-size="12"
+  letter-spacing="2">
+
+  NEURAL INTERFACE
+
+ </text>
+
+
+ <!-- waveform -->
+
+ <path
+  d="
+  M1110 790
+  L1120 790
+  L1125 775
+  L1130 805
+  L1138 760
+  L1145 815
+  L1155 785
+  L1165 795
+  L1175 770
+  L1185 805
+  L1195 780
+  L1205 795
+  L1215 770
+  L1225 805
+  L1235 790
+  L1250 790"
+ fill="none"
+ stroke="url(#bluePurple)"
+ stroke-width="2"
+ filter="url(#glow)">
+
+  <animate
+   attributeName="stroke-dashoffset"
+   from="100"
+   to="0"
+   dur="1s"
+   repeatCount="indefinite"/>
+
+ </path>
+
+
+ <text
+  x="1280"
+  y="790"
+  fill="#7282C4"
+  font-family="monospace"
+  font-size="10">
+
+  LISTENING • PROCESSING • RESPONDING
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     BOTTOM TITLE
+========================================================= -->
+
+<g>
+
+ <path
+  d="
+  M590 830
+  L620 805
+  H980
+  L1010 830
+  L980 855
+  H620
+  Z"
+ fill="#05071A"
+ stroke="url(#bluePurple)"
+ stroke-width="2"
+ filter="url(#glow)"/>
+
+
+ <text
+  x="800"
+  y="840"
+  text-anchor="middle"
+  fill="#FFFFFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="12"
+  letter-spacing="7">
+
+  INNOVATION
+  <tspan fill="#A64DFF"> • </tspan>
+  INTELLIGENCE
+  <tspan fill="#00EFFF"> • </tspan>
+  TOMORROW
+
+ </text>
+
+</g>
+
+
+<!-- =========================================================
+     OUTER HUD FRAME
+========================================================= -->
+
+<g
+ fill="none"
+ stroke-linecap="round">
+
+ <path
+  d="M30 90 V30 H90"
+  stroke="#00EFFF"
+  stroke-width="3"
+  filter="url(#glow)"/>
+
+ <path
+  d="M1510 30 H1570 V90"
+  stroke="#A24FFF"
+  stroke-width="3"
+  filter="url(#glow)"/>
+
+ <path
+  d="M30 810 V870 H90"
+  stroke="#A24FFF"
+  stroke-width="3"
+  filter="url(#glow)"/>
+
+ <path
+  d="M1510 870 H1570 V810"
+  stroke="#00EFFF"
+  stroke-width="3"
+  filter="url(#glow)"/>
+
+
+ <rect
+  x="20"
+  y="20"
+  width="1560"
+  height="860"
+  rx="15"
+  stroke="url(#bluePurple)"
+  stroke-width="1"
+  opacity=".45"/>
+
+</g>
+
+
+<!-- =========================================================
+     MOVING HUD LIGHT
+========================================================= -->
+
+<rect
+ x="0"
+ y="25"
+ width="220"
+ height="2"
+ fill="url(#cyanBeam)"
+ filter="url(#glow)">
+
+ <animate
+  attributeName="x"
+  values="-220;1600"
+  dur="6s"
+  repeatCount="indefinite"/>
+
+</rect>
+
+
+<!-- =========================================================
+     VIGNETTE
+========================================================= -->
+
+<rect
+ width="1600"
+ height="900"
+ fill="url(#vignette)"
+ pointer-events="none"/>
+
 
 </svg>
