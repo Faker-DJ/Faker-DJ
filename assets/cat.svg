@@ -1,183 +1,924 @@
-<svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fluffy gray cat jumping and chasing a glowing firefly">
+<svg
+  viewBox="0 0 1200 700"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Futuristic animated neural technology core">
+
   <defs>
-    <radialGradient id="furLight" cx="35%" cy="25%" r="75%">
-      <stop offset="0%" stop-color="#C9D2E6"/>
-      <stop offset="55%" stop-color="#8B96B0"/>
-      <stop offset="100%" stop-color="#48526C"/>
-    </radialGradient>
-    <radialGradient id="furSoft" cx="40%" cy="28%" r="72%">
-      <stop offset="0%" stop-color="#AEB8D0"/>
-      <stop offset="100%" stop-color="#576280"/>
-    </radialGradient>
-    <radialGradient id="furDark" cx="45%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#5B6684"/>
-      <stop offset="100%" stop-color="#333C54"/>
-    </radialGradient>
-    <radialGradient id="shadowGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000512" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#000512" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="tagGlow" cx="50%" cy="50%" r="50%">
+
+    <!-- =====================================================
+         BACKGROUND
+         ===================================================== -->
+
+    <linearGradient id="bg"
+      x1="0" y1="0"
+      x2="1" y2="1">
+
+      <stop offset="0%" stop-color="#02040C"/>
+      <stop offset="45%" stop-color="#050B1C"/>
+      <stop offset="75%" stop-color="#07152B"/>
+      <stop offset="100%" stop-color="#02040C"/>
+
+    </linearGradient>
+
+
+    <!-- =====================================================
+         CYAN / BLUE / PURPLE GRADIENT
+         ===================================================== -->
+
+    <linearGradient id="neonGradient"
+      x1="0" y1="0"
+      x2="1" y2="1">
+
       <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="100%" stop-color="#00A8FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4F7CFF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+
+    </linearGradient>
+
+
+    <linearGradient id="coreGradient"
+      x1="0" y1="0"
+      x2="1" y2="1">
+
+      <stop offset="0%" stop-color="#00FFFF"/>
+      <stop offset="45%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+
+    </linearGradient>
+
+
+    <!-- =====================================================
+         CORE GLOW
+         ===================================================== -->
+
+    <radialGradient id="coreGlow">
+
+      <stop offset="0%"
+        stop-color="#FFFFFF"
+        stop-opacity="1"/>
+
+      <stop offset="15%"
+        stop-color="#00F5FF"
+        stop-opacity=".95"/>
+
+      <stop offset="45%"
+        stop-color="#2563EB"
+        stop-opacity=".55"/>
+
+      <stop offset="100%"
+        stop-color="#7C3AED"
+        stop-opacity="0"/>
+
     </radialGradient>
-    <radialGradient id="fireflyGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFFDE7"/>
-      <stop offset="35%" stop-color="#D6FF6B"/>
-      <stop offset="100%" stop-color="#9CFF57" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="fluffBlur" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="1.6"/>
+
+
+    <!-- =====================================================
+         GRID GLOW
+         ===================================================== -->
+
+    <filter
+      id="glow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%">
+
+      <feGaussianBlur
+        stdDeviation="4"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
     </filter>
-    <filter id="glowSoft" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="2.6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+
+    <filter
+      id="strongGlow"
+      x="-150%"
+      y="-150%"
+      width="400%"
+      height="400%">
+
+      <feGaussianBlur
+        stdDeviation="10"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
     </filter>
-    <filter id="glowStrong" x="-160%" y="-160%" width="420%" height="420%">
-      <feGaussianBlur stdDeviation="4.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+
+
+    <!-- =====================================================
+         SCAN GRADIENT
+         ===================================================== -->
+
+    <linearGradient
+      id="scan"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="0">
+
+      <stop
+        offset="0%"
+        stop-color="#00F5FF"
+        stop-opacity="0"/>
+
+      <stop
+        offset="50%"
+        stop-color="#00F5FF"
+        stop-opacity=".8"/>
+
+      <stop
+        offset="100%"
+        stop-color="#00F5FF"
+        stop-opacity="0"/>
+
+    </linearGradient>
+
+
+    <!-- =====================================================
+         CLIP FOR CORE
+         ===================================================== -->
+
+    <clipPath id="coreClip">
+
+      <circle
+        cx="600"
+        cy="350"
+        r="115"/>
+
+    </clipPath>
+
   </defs>
 
-  <rect width="700" height="360" fill="#050816"/>
 
-  <!-- ambient background particles -->
-  <g opacity="0.55">
-    <circle cx="70" cy="55" r="2.1" fill="#00F5FF" filter="url(#glowSoft)">
-      <animate attributeName="cy" values="55;35;55" dur="4.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="630" cy="80" r="1.8" fill="#8B5CF6" filter="url(#glowSoft)">
-      <animate attributeName="cy" values="80;60;80" dur="5.1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="655" cy="230" r="2.3" fill="#00A8FF" filter="url(#glowSoft)">
-      <animate attributeName="cy" values="230;210;230" dur="4.6s" repeatCount="indefinite"/>
-    </circle>
+  <!-- =====================================================
+       BACKGROUND
+       ===================================================== -->
+
+  <rect
+    width="1200"
+    height="700"
+    fill="url(#bg)"/>
+
+
+  <!-- =====================================================
+       DIGITAL GRID
+       ===================================================== -->
+
+  <g
+    stroke="#00F5FF"
+    stroke-width=".5"
+    opacity=".13">
+
+    <!-- vertical -->
+
+    <path d="M50 0 V700"/>
+    <path d="M150 0 V700"/>
+    <path d="M250 0 V700"/>
+    <path d="M350 0 V700"/>
+    <path d="M450 0 V700"/>
+    <path d="M550 0 V700"/>
+    <path d="M650 0 V700"/>
+    <path d="M750 0 V700"/>
+    <path d="M850 0 V700"/>
+    <path d="M950 0 V700"/>
+    <path d="M1050 0 V700"/>
+    <path d="M1150 0 V700"/>
+
+    <!-- horizontal -->
+
+    <path d="M0 50 H1200"/>
+    <path d="M0 150 H1200"/>
+    <path d="M0 250 H1200"/>
+    <path d="M0 350 H1200"/>
+    <path d="M0 450 H1200"/>
+    <path d="M0 550 H1200"/>
+    <path d="M0 650 H1200"/>
+
   </g>
 
-  <!-- the firefly the cat is chasing, wandering on a loose loop -->
-  <g>
-    <animateMotion dur="6.5s" repeatCount="indefinite"
-      path="M 260,120 C 340,60 430,70 470,130 C 505,180 460,220 400,190 C 340,160 300,190 250,170 C 200,150 210,110 260,120 Z"/>
-    <circle r="3" fill="url(#fireflyGlow)" filter="url(#glowStrong)">
-      <animate attributeName="opacity" values="0.45;1;0.5;1;0.45" dur="0.9s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="3;4.4;3" dur="0.9s" repeatCount="indefinite"/>
+
+  <!-- =====================================================
+       GRID HORIZONTAL SCAN
+       ===================================================== -->
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="3"
+    fill="url(#scan)"
+    opacity=".6">
+
+    <animate
+      attributeName="y"
+      values="-5;700"
+      dur="5s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- =====================================================
+       AMBIENT PARTICLES
+       ===================================================== -->
+
+  <g
+    fill="#00F5FF"
+    filter="url(#glow)">
+
+    <circle cx="90" cy="100" r="2">
+      <animate
+        attributeName="cy"
+        values="100;80;100"
+        dur="3s"
+        repeatCount="indefinite"/>
     </circle>
+
+    <circle cx="180" cy="530" r="2">
+      <animate
+        attributeName="cy"
+        values="530;500;530"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1020" cy="90" r="2">
+      <animate
+        attributeName="cy"
+        values="90;60;90"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1100" cy="520" r="2">
+      <animate
+        attributeName="cy"
+        values="520;480;520"
+        dur="2.8s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="300" cy="160" r="1.5"/>
+    <circle cx="900" cy="580" r="1.5"/>
+    <circle cx="100" cy="350" r="1.5"/>
+    <circle cx="1100" cy="350" r="1.5"/>
+
   </g>
 
-  <!-- ground contact shadow, reacts to the jump -->
-  <ellipse cx="345" cy="322" rx="150" ry="16" fill="url(#shadowGlow)">
-    <animate attributeName="rx" values="150;110;70;110;155;150" keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.85;0.6;0.3;0.6;0.9;0.85" keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
-  </ellipse>
 
-  <!-- CAT RIG: base position -> side-to-side chase -> jump arc -> squash/stretch -->
-  <g transform="translate(345,300)">
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="0,0; 30,0; -18,0; 12,0; 0,0" keyTimes="0;0.25;0.5;0.75;1" dur="5.4s" repeatCount="indefinite"/>
+  <!-- =====================================================
+       OUTER ROTATING RING
+       ===================================================== -->
 
-      <g>
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 0,-6; 0,-78; 0,-6; 0,6; 0,0"
-          keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+  <g
+    transform="translate(600 350)"
+    fill="none">
 
-        <g>
-          <animateTransform attributeName="transform" type="scale"
-            values="0.94,1.06; 1.05,0.93; 1.12,0.9; 1.03,0.95; 0.88,1.15; 0.94,1.06"
-            keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    <circle
+      r="245"
+      stroke="#172554"
+      stroke-width="2"/>
 
-          <g transform="translate(-345,-300)">
 
-            <!-- TAIL, whipping with excitement -->
-            <path d="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
-                  fill="none" stroke="url(#furSoft)" stroke-width="30" stroke-linecap="round" filter="url(#fluffBlur)">
-              <animate attributeName="d"
-                values="M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122;
-                         M 460,258 C 545,205 555,130 490,110 C 460,102 435,130 445,150;
-                         M 465,255 C 555,240 590,155 515,98 C 476,68 428,82 430,122"
-                dur="1.2s" repeatCount="indefinite"/>
-            </path>
+    <circle
+      r="245"
+      stroke="url(#neonGradient)"
+      stroke-width="2"
+      stroke-dasharray="25 35"
+      opacity=".7"
+      filter="url(#glow)">
 
-            <!-- BODY, layered fluffy masses -->
-            <ellipse cx="330" cy="235" rx="150" ry="88" fill="url(#furLight)" filter="url(#fluffBlur)"/>
-            <ellipse cx="285" cy="195" rx="96" ry="66" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
-            <ellipse cx="405" cy="255" rx="80" ry="48" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.75"/>
-            <ellipse cx="330" cy="282" rx="118" ry="30" fill="url(#furDark)" filter="url(#fluffBlur)" opacity="0.4"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0;360"
+        dur="18s"
+        repeatCount="indefinite"/>
 
-            <!-- fur tufts -->
-            <g fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.85">
-              <ellipse cx="208" cy="236" rx="25" ry="14" transform="rotate(-12 208 236)"/>
-              <ellipse cx="230" cy="268" rx="27" ry="13" transform="rotate(8 230 268)"/>
-              <ellipse cx="440" cy="288" rx="29" ry="14" transform="rotate(-6 440 288)"/>
-            </g>
+    </circle>
 
-            <!-- hind legs, coiled to spring -->
-            <g stroke="#4B5570" stroke-linecap="round">
-              <path d="M 380,275 Q 400,300 390,315" stroke-width="16" fill="none" opacity="0.6"/>
-            </g>
 
-            <!-- REACHING FRONT PAW, swipes up toward the firefly -->
-            <g>
-              <animateTransform attributeName="transform" type="rotate"
-                values="0 252 280; 8 252 280; -42 252 280; 5 252 280; 0 252 280; 0 252 280"
-                keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
-              <ellipse cx="252" cy="280" rx="30" ry="16" fill="url(#furLight)" filter="url(#fluffBlur)"/>
-              <g stroke="#3C4560" stroke-width="1.4" opacity="0.5">
-                <line x1="240" y1="272" x2="240" y2="288"/>
-                <line x1="252" y1="270" x2="252" y2="290"/>
-                <line x1="264" y1="272" x2="264" y2="288"/>
-              </g>
-            </g>
+    <!-- second ring -->
 
-            <!-- HEAD, tilts up excitedly toward the firefly -->
-            <g>
-              <animateTransform attributeName="transform" type="rotate"
-                values="-3 235 172; 0 235 172; -22 235 172; -2 235 172; -3 235 172; -3 235 172"
-                keyTimes="0;0.15;0.45;0.72;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    <circle
+      r="205"
+      stroke="#2563EB"
+      stroke-width="1"
+      stroke-dasharray="5 18"
+      opacity=".6">
 
-              <!-- perked ears -->
-              <path d="M 178,118 Q 166,68 202,90 Q 196,118 190,133 Z" fill="url(#furSoft)"/>
-              <path d="M 182,108 Q 176,86 194,96 Q 190,114 187,124 Z" fill="#FF00FF" opacity="0.3"/>
-              <path d="M 258,108 Q 273,60 300,86 Q 287,116 276,131 Z" fill="url(#furSoft)"/>
-              <path d="M 266,103 Q 276,80 293,92 Q 285,112 278,120 Z" fill="#FF00FF" opacity="0.3"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="360;0"
+        dur="12s"
+        repeatCount="indefinite"/>
 
-              <!-- head mass -->
-              <ellipse cx="235" cy="172" rx="80" ry="64" fill="url(#furLight)" filter="url(#fluffBlur)"/>
-              <ellipse cx="180" cy="197" rx="34" ry="26" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
-              <ellipse cx="290" cy="197" rx="36" ry="28" fill="url(#furSoft)" filter="url(#fluffBlur)" opacity="0.9"/>
+    </circle>
 
-              <!-- alert, wide-open eyes -->
-              <ellipse cx="212" cy="168" rx="9" ry="10" fill="#0E1220"/>
-              <ellipse cx="260" cy="166" rx="9" ry="10" fill="#0E1220"/>
-              <circle cx="212" cy="168" r="4" fill="#00F5FF" filter="url(#glowSoft)">
-                <animate attributeName="opacity" values="1;1;0.1;1" keyTimes="0;0.9;0.95;1" dur="5s" repeatCount="indefinite"/>
-              </circle>
-              <circle cx="260" cy="166" r="4" fill="#00F5FF" filter="url(#glowSoft)">
-                <animate attributeName="opacity" values="1;1;0.1;1" keyTimes="0;0.9;0.95;1" dur="5s" repeatCount="indefinite"/>
-              </circle>
 
-              <!-- nose + excited open mouth -->
-              <path d="M 232,196 L 240,196 L 236,203 Z" fill="#FF9EDB"/>
-              <path d="M 236,203 Q 226,216 224,224 Q 236,222 236,215 Q 236,222 248,224 Q 246,216 236,203 Z"
-                    fill="#2A1830" opacity="0.85"/>
+    <!-- third ring -->
 
-              <!-- whiskers, swept back -->
-              <g stroke="#D6DEEF" stroke-width="1.1" opacity="0.55">
-                <line x1="200" y1="198" x2="155" y2="188"/>
-                <line x1="200" y1="205" x2="155" y2="208"/>
-                <line x1="270" y1="198" x2="315" y2="186"/>
-                <line x1="270" y1="205" x2="315" y2="208"/>
-              </g>
+    <circle
+      r="165"
+      stroke="#A855F7"
+      stroke-width="1.5"
+      stroke-dasharray="2 12"
+      opacity=".7">
 
-              <!-- collar + glowing tag -->
-              <path d="M 186,216 Q 235,238 288,214" stroke="#00A8FF" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9"/>
-              <circle cx="236" cy="230" r="7" fill="url(#tagGlow)" filter="url(#glowSoft)">
-                <animate attributeName="r" values="6;8.5;6" dur="1.4s" repeatCount="indefinite"/>
-              </circle>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0;360"
+        dur="9s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
   </g>
+
+
+  <!-- =====================================================
+       ROTATING TECH SEGMENTS
+       ===================================================== -->
+
+  <g
+    transform="translate(600 350)"
+    fill="none"
+    stroke="url(#neonGradient)"
+    stroke-width="5"
+    filter="url(#glow)">
+
+    <path
+      d="M0 -250 L40 -250"/>
+
+    <path
+      d="M245 0 L245 40"/>
+
+    <path
+      d="M0 245 L-45 245"/>
+
+    <path
+      d="M-245 0 L-245 -40"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0;360"
+      dur="10s"
+      repeatCount="indefinite"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       NETWORK CONNECTIONS
+       ===================================================== -->
+
+  <g
+    fill="none"
+    stroke="#00F5FF"
+    stroke-width="1.5"
+    opacity=".5"
+    filter="url(#glow)">
+
+    <!-- left -->
+
+    <path
+      d="M600 350
+         L450 250
+         L280 250
+         L170 180"/>
+
+    <path
+      d="M600 350
+         L430 350
+         L260 400
+         L120 400"/>
+
+    <path
+      d="M600 350
+         L450 450
+         L300 500
+         L190 560"/>
+
+    <!-- right -->
+
+    <path
+      d="M600 350
+         L760 240
+         L930 220
+         L1060 150"/>
+
+    <path
+      d="M600 350
+         L790 350
+         L950 390
+         L1090 390"/>
+
+    <path
+      d="M600 350
+         L760 460
+         L920 500
+         L1050 570"/>
+
+    <!-- top -->
+
+    <path
+      d="M600 350
+         L600 210
+         L600 100"/>
+
+    <!-- bottom -->
+
+    <path
+      d="M600 350
+         L600 490
+         L600 600"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       DATA PACKETS MOVING THROUGH NETWORK
+       ===================================================== -->
+
+  <g
+    fill="#FFFFFF"
+    filter="url(#strongGlow)">
+
+    <circle r="4">
+
+      <animateMotion
+        dur="3s"
+        repeatCount="indefinite"
+        path="M600 350 L450 250 L280 250 L170 180"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        dur="2.7s"
+        repeatCount="indefinite"
+        path="M600 350 L430 350 L260 400 L120 400"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        dur="3.5s"
+        repeatCount="indefinite"
+        path="M600 350 L760 240 L930 220 L1060 150"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        dur="3s"
+        repeatCount="indefinite"
+        path="M600 350 L790 350 L950 390 L1090 390"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        dur="2.5s"
+        repeatCount="indefinite"
+        path="M600 350 L600 210 L600 100"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        dur="3s"
+        repeatCount="indefinite"
+        path="M600 350 L600 490 L600 600"/>
+
+    </circle>
+
+  </g>
+
+
+  <!-- =====================================================
+       NETWORK NODES
+       ===================================================== -->
+
+  <g
+    fill="#050B1C"
+    stroke="#00F5FF"
+    stroke-width="2"
+    filter="url(#glow)">
+
+    <circle cx="170" cy="180" r="9"/>
+    <circle cx="120" cy="400" r="9"/>
+    <circle cx="190" cy="560" r="9"/>
+
+    <circle cx="1060" cy="150" r="9"/>
+    <circle cx="1090" cy="390" r="9"/>
+    <circle cx="1050" cy="570" r="9"/>
+
+    <circle cx="600" cy="100" r="9"/>
+    <circle cx="600" cy="600" r="9"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       NODE PULSES
+       ===================================================== -->
+
+  <g
+    fill="none"
+    stroke="#00F5FF"
+    stroke-width="2">
+
+    <circle cx="170" cy="180" r="15">
+      <animate
+        attributeName="r"
+        values="10;28;10"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values="1;0;1"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1060" cy="150" r="15">
+      <animate
+        attributeName="r"
+        values="10;30;10"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values="1;0;1"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- =====================================================
+       CORE AURA
+       ===================================================== -->
+
+  <circle
+    cx="600"
+    cy="350"
+    r="170"
+    fill="url(#coreGlow)"
+    filter="url(#strongGlow)">
+
+    <animate
+      attributeName="r"
+      values="150;180;150"
+      dur="3s"
+      repeatCount="indefinite"/>
+
+    <animate
+      attributeName="opacity"
+      values=".45;.8;.45"
+      dur="3s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- =====================================================
+       CORE
+       ===================================================== -->
+
+  <circle
+    cx="600"
+    cy="350"
+    r="115"
+    fill="#030712"
+    stroke="url(#neonGradient)"
+    stroke-width="4"
+    filter="url(#glow)"/>
+
+
+  <!-- =====================================================
+       CORE INNER ROTATION
+       ===================================================== -->
+
+  <g
+    transform="translate(600 350)"
+    fill="none">
+
+    <circle
+      r="90"
+      stroke="#00F5FF"
+      stroke-width="1"
+      stroke-dasharray="3 8"
+      opacity=".8">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0;360"
+        dur="5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <circle
+      r="65"
+      stroke="#8B5CF6"
+      stroke-width="2"
+      stroke-dasharray="15 20">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="360;0"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+  </g>
+
+
+  <!-- =====================================================
+       AI CORE HEXAGON
+       ===================================================== -->
+
+  <polygon
+    points="
+    600,295
+    648,322
+    648,378
+    600,405
+    552,378
+    552,322"
+    fill="#06152A"
+    stroke="#00F5FF"
+    stroke-width="3"
+    filter="url(#glow)">
+
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 600 350;360 600 350"
+      dur="8s"
+      repeatCount="indefinite"/>
+
+  </polygon>
+
+
+  <!-- =====================================================
+       CORE SYMBOL
+       ===================================================== -->
+
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="4"
+    stroke-linecap="round"
+    filter="url(#strongGlow)">
+
+    <path d="M580 350 L600 330 L620 350"/>
+    <path d="M580 350 L600 370 L620 350"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       CORE PULSE
+       ===================================================== -->
+
+  <circle
+    cx="600"
+    cy="350"
+    r="20"
+    fill="#00F5FF"
+    filter="url(#strongGlow)">
+
+    <animate
+      attributeName="r"
+      values="15;35;15"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+
+    <animate
+      attributeName="opacity"
+      values=".9;.2;.9"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- =====================================================
+       DIGITAL RAIN
+       ===================================================== -->
+
+  <g
+    fill="#00F5FF"
+    font-family="monospace"
+    font-size="11"
+    opacity=".35">
+
+    <text x="40" y="220">010101</text>
+    <text x="40" y="240">101001</text>
+    <text x="40" y="260">110010</text>
+
+    <text x="1030" y="450">101100</text>
+    <text x="1030" y="470">010011</text>
+    <text x="1030" y="490">111010</text>
+
+    <text x="760" y="80">AI_CORE</text>
+    <text x="760" y="100">SYSTEM_ON</text>
+
+  </g>
+
+
+  <!-- =====================================================
+       STATUS PANELS
+       ===================================================== -->
+
+  <g
+    font-family="monospace">
+
+    <!-- top title -->
+
+    <text
+      x="55"
+      y="65"
+      fill="#FFFFFF"
+      font-size="26"
+      font-weight="bold"
+      letter-spacing="5">
+
+      NEURAL
+      <tspan fill="#00F5FF">CORE</tspan>
+
+    </text>
+
+
+    <text
+      x="58"
+      y="90"
+      fill="#64748B"
+      font-size="11"
+      letter-spacing="3">
+
+      ARTIFICIAL INTELLIGENCE SYSTEM
+
+    </text>
+
+
+    <!-- left status -->
+
+    <rect
+      x="55"
+      y="555"
+      width="220"
+      height="70"
+      rx="8"
+      fill="#030712"
+      stroke="#164E63"
+      opacity=".9"/>
+
+
+    <circle
+      cx="80"
+      cy="580"
+      r="5"
+      fill="#00FFB3"
+      filter="url(#glow)">
+
+      <animate
+        attributeName="opacity"
+        values="1;.3;1"
+        dur="1s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <text
+      x="95"
+      y="584"
+      fill="#FFFFFF"
+      font-size="12">
+
+      SYSTEM ONLINE
+
+    </text>
+
+
+    <text
+      x="75"
+      y="608"
+      fill="#64748B"
+      font-size="10">
+
+      CORE STATUS : 99.98%
+
+    </text>
+
+
+    <!-- right status -->
+
+    <rect
+      x="925"
+      y="555"
+      width="220"
+      height="70"
+      rx="8"
+      fill="#030712"
+      stroke="#312E81"
+      opacity=".9"/>
+
+
+    <text
+      x="945"
+      y="580"
+      fill="#A78BFA"
+      font-size="11">
+
+      PROCESSING
+
+    </text>
+
+
+    <text
+      x="945"
+      y="605"
+      fill="#FFFFFF"
+      font-size="18">
+
+      847.21 TB/s
+
+    </text>
+
+  </g>
+
+
+  <!-- =====================================================
+       CORNER DECORATIONS
+       ===================================================== -->
+
+  <g
+    stroke="#00F5FF"
+    fill="none"
+    opacity=".6">
+
+    <path d="M25 25 H100"/>
+    <path d="M25 25 V100"/>
+
+    <path d="M1100 25 H1175"/>
+    <path d="M1175 25 V100"/>
+
+    <path d="M25 675 H100"/>
+    <path d="M25 600 V675"/>
+
+    <path d="M1100 675 H1175"/>
+    <path d="M1175 600 V675"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       FINAL VIGNETTE
+       ===================================================== -->
+
+  <rect
+    x="5"
+    y="5"
+    width="1190"
+    height="690"
+    rx="10"
+    fill="none"
+    stroke="#0EA5E9"
+    stroke-opacity=".25"
+    stroke-width="2"/>
+
 </svg>
