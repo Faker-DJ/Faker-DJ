@@ -196,7 +196,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 | | |
 |--|--|
 | Nama | `S2U-project-fan` |
-| Deskripsi | `Website fan-made interaktif untuk Hearts2Hearts yang menampilkan profil, perjalanan, dan konten grup secara visual modern` |
 | Stack | JavaScript · CSS · HTML |
 | Status | `ACTIVE` |
 
@@ -210,7 +209,6 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 | | |
 |--|--|
 | Nama | `techpay-DZ` |
-| Deskripsi | `` |
 | Stack | Flutter  |
 | Status | `IN PROGRESS` |
 
