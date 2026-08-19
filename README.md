@@ -64,30 +64,6 @@ $ status
 
 </div>
 
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,50:00A8FF,100:8B5CF6&height=3" />
-
-<div align="center">
-<img src="https://img.shields.io/badge/%3E_-tentang_saya-050816?style=for-the-badge&logo=aboutdotme&logoColor=00F5FF&labelColor=0B1020&color=0B1020" />
-</div>
-
-<p align="center">
-Saya <b>Dzikran F.R.</b>, mahasiswa Informatika yang tertarik pada pengembangan software dan eksplorasi teknologi.
-Fokus utama saya berada di seputar <b>Web Development</b>, <b>Mobile Development</b>, dan <b>Data Science / AI</b>,
-dengan proses belajar yang terus berjalan: <b>Learning → Building → Experimenting → Improving</b>.
-</p>
-
-<div align="center">
-
-| 🌐 WEB DEVELOPMENT | 📱 MOBILE | 🧠 PROGRAMMING & DATA |
-|:---:|:---:|:---:|
-| HTML | Flutter | Python |
-| CSS | | Data Science |
-| JavaScript | | Artificial Intelligence |
-| PHP | | Machine Learning |
-
-</div>
 
 <br/>
 
@@ -213,6 +189,20 @@ dengan proses belajar yang terus berjalan: <b>Learning → Building → Experime
 | Status | `IN PROGRESS` |
 
 [VIEW PROJECT](PROJECT_URL) · [LIVE DEMO](LIVE_DEMO_URL)
+
+</td>
+
+<td width="50%" valign="top">
+
+**`Web-Order Rental PS`**
+
+| | |
+|--|--|
+| Nama | `Fauzu-Gaming Center` |
+| Stack | PHP · CSS · JavaScript  |
+| Status | `ACTIVE` |
+
+[VIEW PROJECT](https://github.com/Faker-DJ/Fauzu-Gaming-Center) · [LIVE DEMO](https://dash.infinityfree.com/accounts/if0_42503155/domains/fauzugaming.gamer.gd)
 
 </td>
 </tr>
