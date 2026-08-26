@@ -209,7 +209,7 @@ $ status
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=E6F1FF&labelColor=0B1020)](https://github.com/Faker-DJ)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=00A8FF&labelColor=0B1020)](https://www.linkedin.com/in/antwan-dzikran-b9234a431/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=E6F1FF&labelColor=0B1020)](https://www.linkedin.com/in/antwan-dzikran-b9234a431/)
 [![Upwork](https://img.shields.io/badge/Upwork-14A800?style=for-the-badge&logo=upwork&logoColor=FFFFFF)](https://www.upwork.com/freelancers/~0167d23ae0f3f22f57?mp_source=share)
 [![Instagram](https://img.shields.io/badge/Instagram-050816?style=for-the-badge&logo=instagram&logoColor=FF00FF&labelColor=0B1020)](https://www.instagram.com/dzikranfauzu?igsh=cnFqMnc2dnVleGR2)
 [![Email](https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=00FF9C&labelColor=0B1020)](mailto:antwan092826@gmail.com)
